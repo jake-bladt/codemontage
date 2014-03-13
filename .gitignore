@@ -30,3 +30,4 @@
 # Ignore VMs and disc images
 *.iso
 *.box
+.vagrant/
