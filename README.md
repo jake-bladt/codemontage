@@ -18,7 +18,7 @@ Join our mission to create superhero coders! You can get involved by taking any 
 ###Development Environment Setup
 
 These setup instructions have been tested on Mac OS X, Microsoft Windows 7 with and without Cygwin, and Linux (Ubuntu 10.8.) Installing and running the site
-under Windows with or without Cygwin may be possible with enough environmental modifications, but doing so is outside the scope of this document.
+under Windows with or without Cygwin may be possible with enough environmental modifications, but doing so is outside the scope of this document. To develop for CodeMontage on Windows, see "Using Vagrant" below.
 
 CodeMontage currently uses Ruby on Rails 3.2.13 and Postgres 9.2.2. The Gemfile specifies Ruby 2.0.0, but the site also runs in development under 1.9.3 and 
 2.1.1 (tested in Ubuntu.)
@@ -38,6 +38,17 @@ To get started,
 Once you've installed these dependencies, test your setup by running `rails server` and visiting your site at [http://localhost:3000](http://localhost:3000)
 
 Congratulations, you're ready to help build CodeMontage!
+
+
+###Using Vagrant
+While it's frequently possible to run CodeMontage directly on your development machine, it's also possible to run the site on a VM managed by [Vagrant](http://www.vagrantup.com/). Vagrant is a virtual environment manager that works on top of virtualization tools like Oracle Virtual Box and Amazon EC2.
+
+These instructions have been tested on Windows 7 using Oracle Virtual Box, but should work on any OS with most VM tools.
+
+* If you don't already have one, install a VM host. This was tested using [Oracle VirtualBox](https://www.virtualbox.org/).
+* [Install Vagrant](http://www.vagrantup.com/downloads). This was tested on version 1.5.0. If you have an older version of it intalled using RubyGems, uninstall the older version first.
+
+
 
 ## License
 
