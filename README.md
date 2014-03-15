@@ -47,6 +47,14 @@ These instructions have been tested on Windows 7 using Oracle Virtual Box, but s
 
 * If you don't already have one, install a VM host. This was tested using [Oracle VirtualBox](https://www.virtualbox.org/).
 * [Install Vagrant](http://www.vagrantup.com/downloads). This was tested on version 1.5.0. If you have an older version of it intalled using RubyGems, uninstall the older version first.
+* From the home directory of CodeMontage, execute `vagrant up`. This will launch the virtual machine.
+* Once the VM is running, execute `vagrant ssh` to shell into the VM.
+* Our VM is missing one crucial tool that CodeMontage requires. Execute `sudo apt-get install libyaml-dev`.
+* In the VM, switch to the /vagrant directory.
+
+* From this point forward, it's a lot like any regular rails installation. Execute `bundle install` `rake db:create:all` `rake db:migrate` and `rake db:seed`. Then
+execute `rails server`.
+* Open a browser to localhost:4567 to see CodeMontage running on your VM.
 
 
 
