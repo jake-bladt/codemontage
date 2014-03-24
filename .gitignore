@@ -31,3 +31,6 @@
 *.iso
 *.box
 .vagrant/
+
+# Precompiled assets
+/public/assets
