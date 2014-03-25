@@ -43,7 +43,7 @@ Congratulations, you're ready to help build CodeMontage!
 ###Using Vagrant
 While it's frequently possible to run CodeMontage directly on your development machine, it's also possible to run the site on a VM managed by [Vagrant](http://www.vagrantup.com/). Vagrant is a virtual environment manager that works on top of virtualization tools like Oracle Virtual Box and Amazon EC2.
 
-These instructions have been tested on Windows 7 using Oracle Virtual Box, but should work on any OS with most VM tools.
+These instructions have been tested on Windows 7 using Oracle VirtualBox, but should ultimately work on any OS running VirtualBox. Vagrant support is currently a work in progress and may not operate correctly on all platforms due to a confict with the current version of sass-rails.
 
 * If you don't already have one, install a VM host. This was tested using [Oracle VirtualBox](https://www.virtualbox.org/).
 * [Install Vagrant](http://www.vagrantup.com/downloads). This was tested on version 1.5.0. If you have an older version of it intalled using RubyGems, uninstall the older version first.
